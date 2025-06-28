@@ -1,1 +1,1 @@
-# AICTE-Internship-Projects-Week-1
+# AICTE-Internship-Project
