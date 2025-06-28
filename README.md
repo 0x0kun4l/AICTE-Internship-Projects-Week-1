@@ -1,1 +1,1 @@
-# AICTE-Internship-Project
+Garbage Classification
