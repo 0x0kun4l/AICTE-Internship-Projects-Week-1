@@ -1,36 +1,65 @@
-# Created by Kunal Prasad
-## 🗑️ Garbage Classification using EfficientNetV2B2
-A deep learning project that classifies waste images into 6 recyclable categories using a hybrid CNN model built by fine-tuning EfficientNetV2B2 with custom Convolutional Neural Network layers. The project includes a web-based interface using Gradio with support for image upload and real-time webcam capture.
+# 🗑️ Garbage Classification using EfficientNetV2B2
+A deep learning project by Kunal Prasad
 
-### Target Classes
-    📦 Cardboard
-    🧪 Glass
-    ⚙️ Metal
-    📄 Paper
-    🧴 Plastic
-    🚮 Trash
-    
-### ⚙️ Methodology
+## 📌 Overview
+This project classifies waste images into 6 recyclable categories using a hybrid CNN model. It utilizes EfficientNetV2B2 with custom layers through transfer learning. The model is trained on a labeled garbage dataset and evaluated for classification accuracy and performance.
 
-  - Image preprocessing (resizing, normalization) and data augmentation
-  - Applied transfer learning with frozen base CNN layers
-  - Trained models with EarlyStopping and ModelCheckpoint
-  - Evaluated using accuracy/loss graphs and prediction samples
+🔧 This project is built in Jupyter Notebook and includes training visualization, model evaluation, and real-world sample predictions.
 
-### 🛠️ Tools & Technologies Used
+## ♻️ Target Classes
+- 📦 Cardboard
+- 🧪 Glass
+- ⚙️ Metal
+- 📄 Paper
+- 🧴 Plastic
+- 🚮 Trash
 
-🐍 Python 3.x – Core programming language
+## ⚙️ Methodology
+-  **Image preprocessing**: Resizing to 224×224, normalization
+-  **Data augmentation**: Using ImageDataGenerator
+-  **Transfer learning**: EfficientNetV2B2 with base CNN layers frozen initially
+-  **Training**: Implemented EarlyStopping and ModelCheckpoint
+-  **Evaluation**: Using accuracy/loss plots and confusion matrix
 
-📓 Jupyter Notebook – Interactive environment for writing and executing code
+## 🛠️ Tools & Technologies Used
+-  **Python 3.x**: Core programming language
+-  **Jupyter Notebook**: Interactive environment for code development
+-  **TensorFlow & Keras**: Deep learning framework
+-  **NumPy**: Numerical operations
+-  **Matplotlib & Seaborn**: Data visualization
+-  **ImageDataGenerator (Keras)**: Real-time image preprocessing and augmentation
+-  **EfficientNetV2B2**: Pre-trained CNN used for feature extraction
+-  **Scikit-learn**: Classification reports and confusion matrix
 
-🧠 TensorFlow & Keras – Used for building, training, and evaluating the deep learning model
+## 🧠 What I Learned
+-  **AI and Machine Learning Basics**: Gained foundational understanding of key concepts
+-  **Image Dataset Handling**: Learned to preprocess and structure image data for classification
+-  **CNN Model with Transfer Learning**: Built and trained a custom CNN using EfficientNetV2B2
+-  **Model Evaluation**: Applied metrics and visualizations to assess and improve performance
 
-🧮 NumPy – For numerical operations
+##  Sample Outputs
+-  **Training & validation accuracy/loss plots**
+-  **Predicted labels on sample garbage images**
+-  **Confusion matrix and classification report**
 
-📊 Matplotlib & Seaborn – For data visualization (accuracy/loss graphs, confusion matrix)
+## 📂 Dataset Used
+The dataset is sourced from Kaggle:
+🔗 [Garbage Classification Dataset](https://www.kaggle.com/datasets/farzadnekouei/trash-type-image-dataset)
 
-🖼️ ImageDataGenerator (Keras) – For image preprocessing and real-time data augmentation
+To use the dataset:
+1. Download and unzip it.
+2. Rename the folder to: `TrashType_Image_Dataset`
+3. Place the folder inside the project directory.
 
-🧪 EfficientNetV2B2 – Pre-trained CNN used for transfer learning
+## Getting Started
+1. **Prerequisites**: Ensure you have Python, TensorFlow, and necessary libraries installed.
+2. **Dataset**: Prepare the dataset as described above.
+3. **Model Training**: Use the provided Jupyter Notebook to build and train the EfficientNetV2B2 model.
+4. **Evaluation**: Analyze model performance using the provided scripts.
 
-📉 Scikit-learn – For generating classification report and confusion matrix
+## Usage
+- Clone this repository.
+- Install dependencies: `pip install -r requirements.txt`
+- Open the Jupyter Notebook: `jupyter notebook garbage_classification.ipynb`
+- Follow the notebook to train and evaluate the model.
+
